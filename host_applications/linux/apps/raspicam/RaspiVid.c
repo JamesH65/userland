@@ -596,7 +596,7 @@ static int parse_cmdline(int argc, const char **argv, RASPIVID_STATE *state)
          break;
       }
 
-      case CommandSplitWait: // segment wrap value
+      case CommandSplitWait: // split files on restart 
       {
          // Must enable inline headers for this to work
          state->bInlineHeaders = 1;
